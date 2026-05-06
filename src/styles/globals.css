@@ -102,6 +102,18 @@ mark {
   color: oklch(95% 0.02 150);
 }
 
+mark-p {
+  background-color: oklch(52.051% 0.21375 309.909);
+  color: oklch(25% 0.02 150);
+  font-weight: 600;
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em;
+}
+
+.dark mark-p {
+  background-color: oklch(56.697% 0.28273 299.747);
+  color: oklch(95% 0.02 150);
+}
 /* ===== Section Background Variants ===== */
 
 /* Subtle gray background */
