@@ -3,8 +3,11 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
+import cloudflare from '@astrojs/cloudflare';
+
 export default defineConfig({
   site: 'https://astrodeck.dev',
+
   integrations: [
     react(),
     sitemap({
@@ -13,7 +16,10 @@ export default defineConfig({
       lastmod: new Date(),
     }),
   ],
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare(),
 });
